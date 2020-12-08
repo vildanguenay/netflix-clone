@@ -13,7 +13,7 @@ function App() {
   console.log(user);
 
   return (
-    <Router>
+    <Router basename={process.env.PUBLIC_URL}>
       <Switch>
         <IsUserRedirect
           user={user}

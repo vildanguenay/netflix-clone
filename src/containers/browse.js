@@ -13,6 +13,8 @@ export function BrowseContainer({ slides }) {
   const [searchTerm, setSearchTerm] = useState('');
   const [slideRows, setSlideRows] = useState([]);
 
+  console.log(process.env.PUBLIC_URL);
+
   const { firebase } = useContext(FirebaseContext);
 
   const user = {
@@ -51,7 +53,7 @@ export function BrowseContainer({ slides }) {
           <Header.Group>
             <Header.Logo
               to={ROUTES.HOME}
-              src="/images/misc/logo.png"
+              src={`${process.env.PUBLIC_URL}/images/misc/logo.png`}
               alt="Netflix"
             />
             <Header.Link
@@ -110,7 +112,7 @@ export function BrowseContainer({ slides }) {
               {slideItem.data.map((item) => (
                 <Card.Item key={item.docId} item={item}>
                   <Card.Image
-                    src={`/images/${category}/${item.genre}/${item.slug}/small.jpg`}
+                    src={`${process.env.PUBLIC_URL}/images/${category}/${item.genre}/${item.slug}/small.jpg`}
                   />
                   <Card.Meta>
                     <Card.SubTitle>{item.title}</Card.SubTitle>

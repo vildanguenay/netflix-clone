@@ -24,7 +24,7 @@ export const Spinner = styled.div`
     position: absolute;
     top: 50%;
     left: 50%;
-    background-image: url(/images/misc/spinner.gif);
+    background-image: url(/netflix-clone/images/misc/spinner.gif);
     background-size: contain;
     background-repeat: no-repeat;
     margin-top: -150px;

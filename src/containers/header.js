@@ -8,7 +8,7 @@ export function HeaderContainer({ children }) {
       <Header.Frame>
         <Header.Logo
           to={ROUTES.HOME}
-          src="/images/misc/logo.png"
+          src={`${process.env.PUBLIC_URL}/images/misc/logo.png`}
           alt="Netflix"
         />
         <Header.ButtonLink to={ROUTES.LOG_IN}>Log In</Header.ButtonLink>

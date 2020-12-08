@@ -6,7 +6,9 @@ export const Background = styled.section`
   flex-direction: column;
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
     url(${({ src }) =>
-        src ? `../images/misc/${src}.jpg` : '../images/misc/home-bg.jpg'})
+        src
+          ? `/netflix-clone/images/misc/${src}.jpg`
+          : '/netflix-clone/images/misc/home-bg.jpg'})
       top left / cover no-repeat;
 
   @media (max-width: 1100px) {
