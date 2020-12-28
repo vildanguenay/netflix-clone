@@ -65,4 +65,8 @@ export const SubTitle = styled.h2`
 export const Image = styled.img`
   width: 500px;
   max-height: 310px;
+
+  @media (max-width: 600px) {
+    width: inherit;
+  }
 `;
